@@ -1,0 +1,45 @@
+\documentclass{book}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+\usepackage{subfiles}
+\usepackage{parskip}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
+
+\newtcolorbox{mybox}{
+boxrule=0pt,
+sharp corners
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[theorem]
+\newtheorem{problem}{Problem}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\title{\Huge{\textbf{Pre Number Theory}}}
+\author{\Large{IcEevee}}
+\date{}
+
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\subfile{chapters/preface}
+
+\subfile{chapters/chapter1}
+
+
+\end{document}
+
